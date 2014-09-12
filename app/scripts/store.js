@@ -1,0 +1,1 @@
+Rocknrollcall.ApplicationAdapter = DS.FixtureAdapter;
