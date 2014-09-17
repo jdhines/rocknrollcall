@@ -1,4 +1,6 @@
-var Rocknrollcall = window.Rocknrollcall = Ember.Application.create();
+var Rocknrollcall = window.Rocknrollcall = Ember.Application.create({
+  LOG_TRANSITIONS: true
+});
 Rocknrollcall.applicationName = "Rock'n'Roll Call";
 
 Rocknrollcall.dummySearchResultsArtists = [
