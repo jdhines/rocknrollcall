@@ -1,9 +1,10 @@
 var Rocknrollcall = window.Rocknrollcall = Ember.Application.create({
-  LOG_TRANSITIONS: true
+  LOG_TRANSITIONS: true,
+  LOG_ACTIVE_GENERATION: true
 });
 Rocknrollcall.applicationName = "Rock'n'Roll Call";
 
-Rocknrollcall.dummySearchResultsArtists = [
+/*Rocknrollcall.dummySearchResultsArtists = [
   {
     id: 1,
     name: 'Tom Waits',
@@ -25,7 +26,7 @@ Rocknrollcall.dummySearchResultsArtists = [
     enid: 'ARMPVNN13CA39CF8FC',
     hotttnesss: '.79'
   }
-];
+];*/
 
 /* Order and include as you please. */
 require('scripts/controllers/*');
