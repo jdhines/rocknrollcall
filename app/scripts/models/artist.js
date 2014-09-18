@@ -1,4 +1,4 @@
-Rocknrollcall.Artis = Ember.Object.extend({
+Rocknrollcall.Artist = Ember.Object.extend({
   id: null,
   name: null,
   endi: null,
