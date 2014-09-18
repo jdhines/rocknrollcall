@@ -1,9 +1,9 @@
 Rocknrollcall.SearchResultsRoute = Ember.Route.extend({
   model: function (query) {
     return Promise.all([
-      Ember.$.getJSON("http://developer.echonest.com/api/v4/artist/search?api_key=8ZGHVRRD7DTSS2TZH&format=json&results=10&bucket=images&bucket=hotttnesss&bucket=biographies&bucket=id:musicbrainz",
+      Ember.$.getJSON("http://developer.echonest.com/api/v4/artist/search?api_key=8ZGHVRRD7DTSS2TZH&format=json&results=50&bucket=images&bucket=hotttnesss&bucket=biographies&bucket=id:musicbrainz",
         { name: query.term }),
-      Ember.$.getJSON("http://developer.echonest.com/api/v4/song/search?api_key=8ZGHVRRD7DTSS2TZH&format=json&results=10&bucket=id:7digital-US&bucket=audio_summary&bucket=song_hotttnesss&bucket=tracks&bucket=song_type",
+      Ember.$.getJSON("http://developer.echonest.com/api/v4/song/search?api_key=8ZGHVRRD7DTSS2TZH&format=json&results=50&bucket=id:7digital-US&bucket=audio_summary&bucket=song_hotttnesss&bucket=tracks&bucket=song_type",
       { title: query.term })
     ]).then(function(jsonArray){
       var artistResults = jsonArray[0].response.artists,
