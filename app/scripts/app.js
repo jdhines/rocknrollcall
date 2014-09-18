@@ -2,7 +2,6 @@ var Rocknrollcall = window.Rocknrollcall = Ember.Application.create({
   LOG_TRANSITIONS: true,
   LOG_ACTIVE_GENERATION: true
 });
-Rocknrollcall.applicationName = "Rock'n'Roll Call";
 
 /*Rocknrollcall.dummySearchResultsArtists = [
   {
